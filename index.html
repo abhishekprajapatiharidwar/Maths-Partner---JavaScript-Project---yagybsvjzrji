@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- Main Container of Program -->
+    <div id="container">
+
+        <!--1. Heading of Program -->
+        <h1 class="center_txt" id="Main_head"> Maths Partner</h1>
+
+        <!--2. Memory Storage Section -->
+        <section class="memory_section">
+            <p id="developer">Developed By- Abhishek Kumar</p>
+            <button class="logo_butt" id="recent_butt" type="button" onclick="show()"><img
+                    src="https://img.icons8.com/external-sbts2018-outline-sbts2018/50/null/external-most-recent-social-media-basic-1-sbts2018-outline-sbts2018-1.png" /></button>
+            <button class="logo_butt" id="reset_butt" onclick="clear_history() ,location.href='index.html';"><img
+                    src="https://img.icons8.com/dotty/50/000000/recurring-appointment.png" /></button>
+        </section>
+
+        <!-- 3.Input & Search Section for Problem -->
+        <div class="prob">
+
+            <div class="prob_box">
+                <!--Input Problem-->
+                <label for="problem">Problem</label>
+                <input type="text" id="problem" placeholder="Type Here.....">
+            </div>
+
+            <div class="prob_box">
+                <!--Problem Options -->
+                <label for="cat">Select Category</label>
+                <select id="sel">
+                    <option value="/integrate">integration</option>
+                    <option value="/simplify">Simplify</option>
+                    <option value="/factor">Factor</option>
+                    <option value="/derive">Derive</option>
+                    <option value="/zeroes">Find 0's</option>
+                    <option value="/tangent">Find Tangent</option>
+                    <option value="/area">Area Under Curve</option>
+                    <option value="/cos">Cosine</option>
+                    <option value="/sin">Sine</option>
+                    <option value="/tan">Tangent</option>
+                    <option value="/arccos">Inverse Cosine </option>
+                    <option value="/arcsin">Inverse Sine</option>
+                    <option value="/arctan">Inverse Tangent </option>
+                    <option value="/abs">Absolute Value</option>
+                    <option value="/log">Logarithm</option>
+                </select>
+            </div>
+
+            <div class="prob_box">
+                <!--Button for Find Solution of Problems-->
+                <button id="end" onclick="find()" type="submit"><img src="Images/search.gif" /></button>
+            </div>
+
+        </div>
+
+
+        <!-- 4. Reasult Container -->
+        <section class="reasult_cont">
+
+            <div id="load">
+                <!--Loading Logo Section-->
+                <img id="img_load" src="Images/load.gif">
+            </div>
+
+            <div class="res">
+                <!--Reasult of Problem-->
+                <div id="close">
+                    <h2 id="res_h"></h2>
+                    <button id="close_butt" onclick="dlt()"></button>
+                </div>
+                <p id="ans"> </p>
+            </div>
+
+
+            <div id="history">
+                <!--History Of Reasults in Table-->
+                <table>
+                    <thead>
+                        <th>Operation</th>
+                        <th> Reasult</th>
+                    </thead>
+                    <tbody id="his">
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

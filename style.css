@@ -1,0 +1,256 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+body{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch13-082-kpxk9ngk.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=0d1950957cf4077a9e347df6d629e333");
+}  
+
+ 
+/* Main Container of Program */
+
+#container{
+background-color: rgba(255, 255, 255, 0.777);
+box-shadow: -8px -8px 20px 5px rgba(24, 153, 245, 0.93);
+width: 80%;
+padding-bottom: 40px;
+border-radius: 40px;
+}
+
+/* 1. Heading of Program */
+.center_txt{            
+    text-align: center;    
+}
+
+#Main_head{              
+    font-size:4vw;  
+    text-shadow: 3px 3px white;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+
+
+/* 1. memory Section **/
+
+.memory_section{
+    background-color: rgba(192, 191, 191, 0.792);
+    display: grid;
+    grid-template-columns:9fr 1fr 1fr;
+    margin-bottom: 2px;
+    padding: 5px;
+    justify-content: end;
+}
+
+#developer
+{
+    align-self: center;
+    justify-self:flex-start;
+    font-size: 1.6vw;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 500;
+    margin-left: 10px;
+    text-shadow: 1px 1px white;
+    color:#00235B;
+}
+
+.logo_butt{
+border-radius: 5px;
+margin: 5px;
+}
+
+#recent_butt:hover{
+    background-color: rgba(5, 249, 78, 0.775);
+    box-shadow: 2px 2px 12px 1px greenyellow;
+}
+
+#reset_butt:hover{
+    background-color: rgb(253, 0, 0);
+    box-shadow: 5px 5px 12px 2px rgb(255, 255, 255);
+}
+
+
+/* 3.Input & Search Section for Problem  */
+.prob{
+background-color:#FFDD83;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input{
+    width: 30vw; 
+}
+
+select{
+    width: 20vw;
+    background-color:#00235B;
+    color:white;
+    border-radius: 20px;
+}
+
+
+#problem{                 /*Input Problem */
+    height: 0.6in;
+    font-size: 25px;
+}
+
+
+::placeholder {
+    font-family: 'Frank Ruhl Libre', serif;
+   
+    padding-left: 5px;
+  }
+
+
+label{
+    font-size: 2vw;
+}
+
+#sel{                    /*Problem Option*/
+    height:0.6in ;
+    font-size: 2vw;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+#sel option{
+    height: 0.7in;
+    font-size: 1.5vw;
+}
+
+.prob_box{            /* Button for Find Solution of Problems*/
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content:end;
+    }
+
+#end{
+    height: 0.8in;
+    width: 0.8in;
+    border: none;
+    border-radius: 100%;
+    background-color:white ;
+}
+
+#end:hover{
+    box-shadow: 2px 2px 10px 1px blue;
+    background-color: rgb(253, 253, 253);
+}
+
+#end:active{
+    box-shadow: 2px 2px 10px 1px #E21818;
+}
+
+
+
+/* 4. Reasult Container */
+
+.reasult_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+
+#load{                           /*Loading Logo Section*/
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#load img{
+    width: 15vw;
+}
+
+.res{                             /*Reasult of Problem*/
+    background-color: white;
+    width: 80%;
+    border-radius: 0;
+    padding: 20px;
+    padding-top: 2px;
+    padding-right: 2px;
+}
+
+#res_h{
+  font-size: 1.6vw; 
+}
+
+#ans{
+    color:#00235B;
+    font-size: 3vw;
+    overflow-wrap: break-word;
+}
+
+#close{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+#close_butt{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-image: url("https://img.icons8.com/fluency/48/null/cancel.png");
+    margin-left: 25vw;
+    background-size: cover;
+    background-position: center;
+    background-color:white;
+    border-radius: 100%;
+    border: none;
+}
+
+#close_butt:hover{
+    box-shadow: 4px 4px 10px 1px red;
+    border:2px solid red ;
+}
+
+
+
+/* 5. History Of Reasults in Table */
+
+#history{
+    font-size:2vw;
+    height: 3in;
+    overflow-wrap:break-word;
+    overflow: scroll;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; 
+    
+  }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+  th{
+    background-color: #00235B;
+    color: white;
+}
+
+  td:nth-child(even) {
+    background-color:white;
+    color: #E21818;
+}
+
+  
+
+
+
+
+
+
