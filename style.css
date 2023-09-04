@@ -22,7 +22,12 @@ background-color: rgba(255, 255, 255, 0.777);
 box-shadow: -8px -8px 20px 5px rgba(24, 153, 245, 0.93);
 width: 80%;
 padding-bottom: 40px;
-border-radius: 40px;
+border-radius: 1rem;
+}
+
+#container p{
+    text-align: center;
+    color: #00235B;
 }
 
 /* 1. Heading of Program */
@@ -37,6 +42,22 @@ border-radius: 40px;
 }
 
 
+.example{
+    padding: 0.4rem;
+}
+.example a{
+    text-decoration: none;
+    color:#00235B;
+    background-color: white;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.example a:hover{
+    background-color:#00235B;
+    color: white;
+}
 
 /* 1. memory Section **/
 
@@ -55,10 +76,17 @@ border-radius: 40px;
     justify-self:flex-start;
     font-size: 1.6vw;
     font-family: 'Lobster Two', cursive;
-    font-weight: 500;
+    font-weight: 800;
     margin-left: 10px;
     text-shadow: 1px 1px white;
     color:#00235B;
+}
+#developer a{
+    text-decoration: none;
+    color: #00235B;
+}
+#developer a:hover{
+    color: #E21818;
 }
 
 .logo_butt{
@@ -176,7 +204,7 @@ label{
 .res{                             /*Reasult of Problem*/
     background-color: white;
     width: 80%;
-    border-radius: 0;
+    border-radius: 1rem;
     padding: 20px;
     padding-top: 2px;
     padding-right: 2px;

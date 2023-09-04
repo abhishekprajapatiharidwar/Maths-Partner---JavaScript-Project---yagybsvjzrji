@@ -55,19 +55,33 @@ function lcadd(op,ex,res)
 
 // This function retrieves data from the local storage of the browser and displays it on the page.
 let i=1;
-function show()
-{
-    document.getElementById('history').hidden=false;
-    const len=localStorage.length;
- console.log(len);
- let his=document.getElementById('his');
-  for(let i=0;i<len;i++)
-  {
-    let list=document.createElement('tr');
-    list.innerHTML=`<td>${localStorage.key(i)}</td>   <td>${localStorage.getItem(`${localStorage.key(i)}`)}<td>`
-    his.appendChild(list);
-    document.querySelector(".res").hidden=true;
-}}
+function show() {
+    const historySection = document.getElementById('history');
+    const historyTable = document.getElementById('his');
+
+    // Clear existing content in the history table
+    historyTable.innerHTML = '';
+
+    // Populate the history table with new rows
+    const len = localStorage.length;
+    console.log(len);
+
+    for (let i = 0; i < len; i++) {
+        let key = localStorage.key(i);
+        let value = localStorage.getItem(key);
+
+        let list = document.createElement('tr');
+        list.innerHTML = `<td>${key}</td><td>${value}</td>`;
+        historyTable.appendChild(list);
+    }
+
+    // Hide the result section
+    document.querySelector(".res").hidden = true;
+
+    // Show the history section
+    historySection.hidden = false;
+}
+
 
 
 
